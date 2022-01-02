@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="accueil.css" />
+   <link rel="stylesheet" href="teeeext.css">
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+ 
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link    
+        href="https://fonts.googleapis.com/css2?family=Comforter&family=Corinthia:wght@400;700&family=Cormorant+Garamond:ital,wght@1,300&family=Gwendolyn:wght@400;700&family=Meow+Script&family=Playfair+Display&family=Smooch&display=swap"
+        rel="stylesheet">
+     
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+    </nav>
+    <div class="logoTogl-container">
+
+        <div class="logo">
+            <img src="images/logo-bc-Fabric 2.png" alt="logo" />
+     
+           
+        </div>
+        <!-- le menu responsive  -->
+        <div class="toggle">
+     
+            <i class="fa fa-bars open" aria-hidden="true"></i>
+            <i class="fa fa-times close" aria-hidden="true"></i>
+     
+        </div>
+        <hr />
+    </div>
+
+   <ul class="menu">
+       <li><a href="accueil.html">Accueil</a> </li>
+       <li><a href="bijoux.html">Bijoux</a> </li>
+       <li><a href="coutures.html">Couture</a> </li>
+       <li><a href="apropos.html">A propos de nous</a> </li>
+       <li><a href="connexion.html">Connexion</a> </li>
+       <li><a href="inscription.html">Inscription</a> </li>
+
+   </ul>
+         <nav>
+             
+
+
+     </header>
+ 
+
+    <section class="inscreption_section">
+
+        <form class="form-inscription" onSubmit={this.handleSubmit} >
+    
+            <h2>Inscription</h2>
+            <div class="form-group-inscr">
+    
+                <input
+                    type="pseudo"
+                    class="form-control-ins"
+                    ="pseudo"
+                    placeholder="Inserze votre pseudo"
+                    
+                    onChange={this.handleChange}
+                />
+             
+                
+    
+    
+    
+            </div>
+            <div class="form-group-inscr">
+    
+                <input
+                    type="email"
+                    class="form-control-ins"
+                    ="email"
+                    placeholder="Inserze votre email"
+                   
+                    onChange={this.handleChange}
+                />
+                
+    
+            </div>
+    
+            <div class="form-group-inscr">
+    
+                <input
+                    type="password"
+                    class="form-control-ins"
+                    ="password"
+                    placeholder="Inserez votre mot de pass"
+                    
+                    onChange={this.handleChange}
+                />
+                 
+    
+            </div>
+    
+    
+    
+    
+            <button type="submit" class="btn-insc btn-primary">Envoyer</button>
+        </form>
+        <div class="deja-membre">
+            <p>Déjà memebre connectez vous! </p>
+    
+    
+            <button class="connexion-button"
+            onClick={this.handleClick}
+    
+    
+            ><a href="connexion.html" >Connexion</a>  </button>
+        </div>
+    </section>
+
+
+
+ 
+<script type="text/javascript" src="refaire.js"></script>
+<script src="https://use.fontawesome.com/76c37ff6f6.js"></script>
+    
+</body>
+</html>

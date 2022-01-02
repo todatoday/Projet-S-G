@@ -1,0 +1,104 @@
+
+.container{
+ 
+   display: flex;
+   flex-direction: row;
+   margin: 200px 90px;
+ 
+
+}
+
+/* tablett screan */
+
+@media all and (max-width: 991px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+         margin: 150px 0px;
+        padding: 0px;
+    }
+    .tri_container{
+        background-color: salmon;
+        padding: 20px;
+        
+    }
+}
+ 
+
+
+/* enlever la liste a puce */
+.bijoux_tri ul li{
+    
+    list-style: none;
+}
+
+.couturs_tri ul li{
+    list-style: none;
+}
+
+.bijoux_tri ul li a{
+  
+    margin: 10px;
+     
+     
+}
+.bijoux_tri h1{
+    margin: 0px;
+    padding: 0px;
+}
+.couturs_tri h1{
+    margin: 0px;
+    padding: 0px;
+}
+.couturs_tri ul li a {
+    padding: 10px 20px 10px 20px;
+    margin: 10px;
+} 
+
+/* font-awsom étoils */
+
+ h4 .fa{
+    color: #FCB040;
+    /* background-color: #FCB040; */
+ } 
+
+ .etoils{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.container .tri_container{
+     
+    width: 60%;
+    padding: 20px;
+    margin: 10px;
+     
+    
+}
+.card_image{
+   width: 270px;
+   height: 337px;
+    
+}
+.card_items{
+   
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px auto;
+    
+} 
+
+ 
+ .card{
+    text-align: center;
+    padding: 20px;
+    /* background-color: crimson; */
+    /* margin: 10px auto; */
+     
+    
+    
+   
+ } 

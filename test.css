@@ -1,0 +1,134 @@
+*{
+    /* marge et padding 0 pour toutes les element  */
+    margin: 0;
+    padding: 0;
+    /* permet de changer le model de boite */
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: sans-serif;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+header{
+    /* quand on mis la position absolute la dive ne prend pas 100% la taille de son parent par defaut 
+    c'est pour ca il faut mettre la largeur a 100% */
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: black;
+    color: white;
+    height: 8vh;
+    padding: 0 2rem;
+}
+
+nav{
+    /* prendra 100% de la largeur de son parent et 100% de la hauteur de son parent */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.toggle {
+    display: none;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 500px;
+}
+
+.menu li a {
+    list-style: none;
+}
+
+/* section hero */
+
+.hero{
+    height: 100vh;
+    background-image: url("images/bracelet-chapelet-perles-couleur_grande.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media all and (max-width: 991px) {
+    header{
+        background: transparent;
+    }
+    .toggle{
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        position: relative;
+        z-index: 20;
+    }
+    .logo{
+        z-index: 20;
+    }
+
+    .open {
+        display: block;
+     
+    }
+      .close{
+         visibility: hidden;
+    }
+
+    .afficher .open{
+        display: none;
+    }
+
+    .afficher .close{
+         
+        visibility: visible;
+    }
+
+    .menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: space-around;
+        transform: translateX(-100%);
+        /* ici ils disparaissent */
+    }
+
+    /*  la si le menu est ouvert */
+    .afficher .menu{
+        /* la le menu reviendra à ca position initial */
+        transform: translateX(0);
+        /* animation */
+        transition: transform 1s;
+    }
+
+    .menu li a {
+        font-size: 2rem;
+    }
+
+   
+    
+}

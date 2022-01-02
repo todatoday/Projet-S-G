@@ -1,0 +1,17 @@
+ .inscreption_section{
+    margin: 100px 250px;
+ }
+
+.form-group-inscr{
+    
+    margin: 10px 200px;
+}
+
+.form-inscription{
+    background-color: red;
+}
+
+.form-group-inscr{
+    background-color: tomato;
+    padding: 10px;
+}
